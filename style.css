@@ -1,9 +1,14 @@
+:root {
+    --primary-color: #00DBDE;
+    --secondary-color: #FC00FF;
+}
+
 /* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'DM Sans', sans-serif;;
 }
 
 /* General styles */
@@ -16,10 +21,9 @@ body {
 }
 
 .card-wrapper {
-    border: 2px solid black;
     border-radius: 10px;
     
-    width: 400px;
+    width: 450px;
 
     padding: 30px;
 }
@@ -43,6 +47,7 @@ body {
 .form-stack textarea {
      display: block;
 
+     padding: 0 5px 10px;
      margin-bottom: 2rem;
 
      font-size: 20px;
@@ -51,25 +56,46 @@ body {
 
      border: none;
      border-bottom: 1px solid black;
- }
+}
 
- .form-stack label {
+.form-stack label {
      display: block;
      margin-bottom: 0.5rem;
- }
+}
 
- .form-stack select {
-    background-color: white;
- }
+textarea {
+    resize: vertical;
+}
 
 button {
     display: block;
     width: 100%;    
-
+    
     padding: 10px;
-
+    
+    border: none;
     border-radius: 30px;
-    font-size: 16px;
-
+    
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    
     text-align: center;
+}
+
+/* Background style */
+
+.form-stack select,
+.bg-white {
+   background-color: white;
+}
+
+.bg-gradient {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--secondary-color) 100%);    
+}
+
+.bg-gradient__reverse {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 100%);
 }
