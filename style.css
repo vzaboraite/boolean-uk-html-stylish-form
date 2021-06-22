@@ -3,8 +3,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
+/* General styles */
+
 body {
-    background-color: aqua;
+    min-height: 100vh;
+    display: grid;
+    
+    place-content: center;
+}
+
+.card-wrapper {
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    width: 400px;
+
+    padding: 30px;
+}
+
+.card-wrapper h1 {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.form-stack > * {
+    width: 100%;
+}
+
+.form-stack {
+    padding: 1rem;
+}
+
+.form-stack input,
+.form-stack select,
+.form-stack textarea {
+     display: block;
+
+     margin-bottom: 2rem;
+
+     font-size: 20px;
+
+     line-height: 1.5;
+
+     border: none;
+     border-bottom: 1px solid black;
+ }
+
+ .form-stack label {
+     display: block;
+     margin-bottom: 0.5rem;
+ }
+
+ .form-stack select {
+    background-color: white;
+ }
+
+button {
+    display: block;
+    width: 100%;    
+
+    padding: 10px;
+
+    border-radius: 30px;
+    font-size: 16px;
+
+    text-align: center;
 }
