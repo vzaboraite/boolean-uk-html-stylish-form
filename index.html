@@ -12,13 +12,13 @@
         <h1>Say Hello!</h1>
         <form class="form-stack">
             <label for="name">Your name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
     
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email address">
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
     
             <label for="services">Needed services</label>
-            <select type="text" name="services" id="services">
+            <select name="services" id="services" required>
                 <option value="">Choose services</option>
                 <option value="service1">Service1</option>
                 <option value="service2">Service2</option>
@@ -31,7 +31,7 @@
             </select>
     
             <label for="budget">Budget</label>
-            <select name="budget" id="budget">
+            <select name="budget" id="budget" required>
                 <option value="">Select Budget</option>
                 <option value="budget1">Budget1</option>
                 <option value="budget2">Budget2</option>
@@ -44,9 +44,9 @@
             </select>
     
             <label for="message">Message</label>
-            <textarea id="message" name="message" cols="20" rows="3" placeholder="Your message here..."></textarea>
+            <textarea id="message" name="message" rows="3" placeholder="Your message here..." required></textarea>
        
-            <button type="submit">Submit</span></button>
+            <button type="submit">Submit</button>
         </form>
     </main>
 </body>
