@@ -99,3 +99,18 @@ button {
     background-color: var(--primary-color);
     background-image: linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 100%);
 }
+
+/* Input styles */
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+input:required:invalid:focus-visible,
+select:required:invalid:focus-visible,
+textarea:required:invalid:focus-visible {
+    box-shadow: 0px 0px 10px 0.4px darkred;
+    border-bottom: 1px solid darkred;
+  }
