@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Say Hello!</h1>
+    <form>
+        <label for="name">Your name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email address">
+
+        <label for="services">Needed services</label>
+        <select type="text" name="services" id="services">
+            <option value="">Choose services</option>
+            <option value="service1">Service1</option>
+            <option value="service2">Service2</option>
+            <option value="service3">Service3</option>
+            <option value="service4">Service4</option>
+            <option value="service5">Service5</option>
+            <option value="service6">Service6</option>
+            <option value="service7">Service7</option>
+            <option value="service8">Service8</option>
+        </select>
+
+        <label for="budget">Budget</label>
+        <input type="number" name="budget" id="budget" placeholder="Select Budget">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
